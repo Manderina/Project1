@@ -1,0 +1,80 @@
+/*General Body style*/
+* {  margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+/*nava bar styling*/
+
+.navbar{
+    background-color: rgb(5, 83, 2);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-item{
+    margin: 0;
+}
+/*nava link styling*/
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(243, 240, 233);
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.nav-link:hover {
+    background-color: #d15a0a;
+    border-radius: 5px;
+    color: #111110;
+}
+.hire-button{
+    background-color: #8a9905;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px ;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+.hire-button a {
+    color: rgb(238, 240, 230);
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hire-button:hover{
+    background-color: rgb(39, 22, 1);
+    color: rgb(16, 66, 3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hire-button {
+        align-self: flex-end;
+    }
+}
