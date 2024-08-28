@@ -1,24 +1,44 @@
 /*General Body style*/
-* {  margin: 0px;
-     padding: 0px;
-     box-sizing: border-box;
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
+
+/* Header section */
+header{
+    background-color:#062d44 ;
+    color:#dcddce ;
+    text-align:center ;
+}
+
+/* Profile image */
+.Profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgb(37, 114, 1);
+}
+
 /*nava bar styling*/
 
 .navbar{
-    background-color: rgb(5, 83, 2);
+    background-color: rgb(129, 143, 182);
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 30px;
 }
 
 .nav-list{
     list-style: none;
     display: flex;
     gap: 20px;
+    padding-left: 400px;
 }
 .nav-item{
     margin: 0;
@@ -35,14 +55,24 @@
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
 }
+/*Image style */
+.Profile-pic{
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    border-radius: 50%;
+    
+}
 
 .nav-link:hover {
-    background-color: #d15a0a;
+    background-color: #6e2f05;
     border-radius: 5px;
-    color: #111110;
+    color: #222221;
 }
 .hire-button{
-    background-color: #8a9905;
+    background-color: #193c86;
     border: none;
     padding: 10px 20px;
     border-radius: 5px ;
@@ -53,13 +83,13 @@
 }
 
 .hire-button a {
-    color: rgb(238, 240, 230);
+    color: rgb(250, 252, 242);
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .hire-button:hover{
-    background-color: rgb(39, 22, 1);
-    color: rgb(16, 66, 3);
+    background-color: rgb(107, 71, 5);
+    color: rgb(29, 22, 2);
 }
 
 /* Responsive Design */
@@ -77,4 +107,11 @@
     .hire-button {
         align-self: flex-end;
     }
+}
+footer{
+    background-color: #383838;
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+    margin: 0px;
 }
